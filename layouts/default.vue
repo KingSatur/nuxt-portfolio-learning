@@ -16,6 +16,9 @@
 </template>
 
 <script setup>
+const colorMode = useColorMode();
+colorMode.value = "dark";
+
 useHead({
   titleTemplate: "%s",
   link: [
@@ -35,5 +38,6 @@ useHead({
 <style>
 body {
   font-family: "Roboto";
+  @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300;
 }
 </style>
