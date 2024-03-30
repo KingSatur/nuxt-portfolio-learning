@@ -1,6 +1,7 @@
 ---
 title: "First blog"
 description: "First blog of the website"
+publishedAt: 2024-02-20 10:00:00
 head:
   meta:
     - name: "keywords"
