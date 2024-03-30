@@ -1,12 +1,17 @@
 <template>
   <div class="container mx-auto max-w-2xl mt-5">
     <header class="flex justify-between items-center">
-      <div>
-        <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200"
-          >David</NuxtLink
-        >
+      <div class="flex items-center space-x-12">
+        <div>
+          <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200"
+            >David</NuxtLink
+          >
+        </div>
+        <Menu />
       </div>
-      <Menu />
+      <ClientOnly>
+        <ThemeToggle />
+      </ClientOnly>
     </header>
 
     <main class="p-2 mt-10">
@@ -16,9 +21,6 @@
 </template>
 
 <script setup>
-const colorMode = useColorMode();
-colorMode.value = "dark";
-
 useHead({
   titleTemplate: "%s",
   link: [
