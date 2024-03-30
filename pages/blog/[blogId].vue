@@ -1,5 +1,7 @@
 <template>
-  <div>Blog page for id = {{ route.params.blogId }}</div>
+  <article>
+    <ContentDoc />
+  </article>
 </template>
 
 <script setup>
