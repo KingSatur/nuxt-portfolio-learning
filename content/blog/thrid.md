@@ -2,6 +2,7 @@
 title: "Introduction to Vue 3"
 description: A beginner's guide to getting started with Vue 3.
 image: /images/vue-logo.png
+toc: true
 publishedAt: 2023-05-20 10:00:00
 head:
   meta:
